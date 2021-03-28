@@ -26,7 +26,7 @@ impl Player {
     &self.name
   }
 
-  pub fn get_life(&self) -> u32 {
-    self.life
+  pub fn get_life(&self) -> &u32 {
+    &self.life
   }
 }
