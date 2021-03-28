@@ -19,10 +19,10 @@ mod tests {
     assert_eq!(&expected, player.get_life());
   }
 
-
   #[test]
   fn should_not_panic_when_attack() {
     let player = Player::new("John", 100, 10);
     assert!(player.attack() >= 0 as u16);
   }
+
 }
