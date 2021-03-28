@@ -1,5 +1,5 @@
 [package]
-name = "biat-mmo-api"
+name = "biat_mmo_api"
 version = "0.1.0"
 authors = ["Kelvin Floresta de Andrade <kelvinf.contato@gmail.com>"]
 edition = "2018"
