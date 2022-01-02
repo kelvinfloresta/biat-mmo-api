@@ -3,7 +3,7 @@ use rand::{thread_rng, Rng};
 pub struct Player {
   name: String,
   life: u32,
-  power: u16
+  power: u16,
 }
 
 impl Player {
@@ -11,7 +11,7 @@ impl Player {
     Player {
       name: name.to_string(),
       power: power,
-      life: life
+      life: life,
     }
   }
 
