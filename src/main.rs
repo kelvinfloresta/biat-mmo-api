@@ -1,7 +1,7 @@
-mod player;
-use player::Player;
+mod entities;
+use entities::player::Player;
 
-fn log(player: &Player){
+fn log(player: &Player) {
   println!("Player");
   println!("name: {}", player.get_name());
   println!("life: {}", player.get_life());
@@ -13,5 +13,3 @@ fn main() {
   john.attack();
   log(&john);
 }
-
-
