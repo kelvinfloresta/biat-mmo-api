@@ -21,6 +21,11 @@ impl Player {
     random_attack as u16
   }
 
+  pub fn receive_damage(&mut self, damage: u32) -> u32 {
+    self.life -= damage;
+    self.life
+  }
+
   pub fn get_name(&self) -> &String {
     &self.name
   }
