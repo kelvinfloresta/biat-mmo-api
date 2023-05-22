@@ -14,14 +14,16 @@ mod tests {
   #[test]
   fn should_have_life() {
     let player = Player::new("John", 100, 10);
-    let expected: u32 = 100;
+    let expected: u16 = 100;
     assert_eq!(&expected, player.get_life());
   }
 
   #[test]
-  fn should_not_panic_when_attack() {
+  fn should_calculate_attack_correctly() {
     let player = Player::new("John", 100, 10);
-    assert!(player.attack() >= 0 as u16);
+    let (min, max) = player.attack();
+    assert!(min == 10);
+    assert!(max  == 10 * 2);
   }
 
   #[test]

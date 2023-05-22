@@ -5,7 +5,6 @@ fn log(player: &Player) {
   println!("Player");
   println!("name: {}", player.get_name());
   println!("life: {}", player.get_life());
-  println!("attack: {}", player.attack());
 }
 
 fn main() {
