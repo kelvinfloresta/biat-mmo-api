@@ -29,7 +29,7 @@ mod tests {
   #[test]
   fn should_receive_damage() {
     let mut player = Player::new("John 2", 100, 100);
-    let new_life = player.receive_damage(10);
+    let new_life = *player.take_damage(10);
 
     assert_eq!(90, new_life);
   }

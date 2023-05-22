@@ -17,9 +17,9 @@ impl Player {
     return (self.power, self.power * 2)
   }
 
-  pub fn receive_damage(&mut self, damage: u16) -> u16 {
+  pub fn take_damage(&mut self, damage: u16) -> &u16 {
     self.life -= damage;
-    self.life
+    &self.life
   }
 
   pub fn get_name(&self) -> &String {
